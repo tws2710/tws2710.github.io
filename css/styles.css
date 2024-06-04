@@ -43,3 +43,48 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 50px 50px;
+    gap: 10px;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box3 box3"
+      "box2 box4 box5"
+      "box6 box6 box6";
+}
+.wrapper div {
+  padding: 20px;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: firebrick;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: lightyellow;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: lightgreen;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: lightblue;
+}
+
+.box5 {
+    grid-area: box5;
+    background-color: plum;
+}
+
+.box6 {
+    grid-area: box6;
+    background-color: pink;
+}
