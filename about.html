@@ -49,14 +49,20 @@
 
     <script>
         const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+            name: 'Timothy Woo-Sam',
+            imageUrl: 'images/gnomePlumeria.jpg',
+            bio: 'Hello, My name is Timothy Woo-Sam and I am student taking WEBD-225. This course helps me work towards my Web Design and Development degree. I enjoy watching and playing soccer and basketball.'
         };
 
         // Step one - Create a React element
+        const h1ElementName = React.createElement('h1', null, user.name);
+        const imgElementImgUrl = React.createElement('img', { src: user.imageUrl, alt: 'Gnome with plumeria flowers' });
+        const pElementBio = React.createElement('p', null, user.bio);
 
         // Step 2: Render the React element
+        ReactDOM.render(h1ElementName, document.getElementById('h1'));
+        ReactDOM.render(imgElementImgUrl, document.getElementById('img'));
+        ReactDOM.render(h1ElementName, document.getElementById('content'));
 
     </script>
 
