@@ -56,13 +56,13 @@
 
         // Step one - Create a React element
         const h1ElementName = React.createElement('h1', null, user.name);
-        const imgElementImgUrl = React.createElement('img', { src: user.imageUrl, alt: 'Gnome with plumeria flowers', style { width: '200px', height: '200px' } });
+        const imgElementImgUrl = React.createElement('img', { src: user.imageUrl, alt: 'Gnome with plumeria flowers', style: { width: '200px', height: '200px' } });
         const pElementBio = React.createElement('p', null, user.bio);
 
         // Step 2: Render the React element
         ReactDOM.render(h1ElementName, document.getElementById('h1'));
         ReactDOM.render(imgElementImgUrl, document.getElementById('img'));
-        ReactDOM.render(h1ElementName, document.getElementById('content'));
+        ReactDOM.render(pElementBio, document.getElementById('content'));
 
     </script>
 
