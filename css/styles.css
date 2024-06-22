@@ -24,6 +24,10 @@ p {
     font-size: 1.6rem;
 }
 
+.contact-paragraph {
+    font-size: 1rem;
+}
+
 nav {
     margin-bottom: 120px;
 }
@@ -87,4 +91,13 @@ img.dibley {
 .box6 {
     grid-area: box6;
     background-color: pink;
+}
+
+.footer-container {
+    background-color: grey;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
